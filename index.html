@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="game-content">
+                <div class="game-content__player-0 animated fadeIn">
+                    <div class="player-name" id="player-0">Player 1</div>
+                    <div class="player-score" id="score-0">2</div>
+                    <div class="player-score__box">
+                        <div class="player-score__box--heading">Current</div>
+                        <div id="current-0" class="player-score__box--current">11</div>
+                    </div>
+                </div>
+
+                <div class="game-content__items">
+                    <div class="new-game-section animated bounceInDown">
+                        <button class="new-game-btn">New Game<i class="fas fa-plus-circle fa-2x"></i></button>
+                    </div>
+                    <div class="score-input animated bounceInDown">
+                        <input type="text" class="user-input" placeholder="set score"><button class="confirm"><i class="fas fa-check-circle fa-2x"></i></button>
+                    </div>
+                    <div class="dices-section">
+                        <img src="dice-1.png" alt="Dice" class="dice">
+                    </div>
+                    <div class="hold-section animated bounceInUp">
+                        <button class="hold-btn" disabled>Hold<i class="fas fa-ban fa-2x"></i></button>
+                    </div>
+                    <div class="roll-section animated bounceInUp">
+                        <button class="roll-btn" disabled>Roll dice<i class="fas fa-dice fa-2x"></i></button>
+                    </div>
+                </div>
+
+                <div class="game-content__player-1 animated fadeIn">
+                    <div class="player-name" id="player-1">Player 2</div>
+                    <div class="player-score" id="score-1">2</div>
+                    <div class="player-score__box">
+                        <div class="player-score__box--heading">Current</div>
+                        <div id="current-1" class="player-score__box--current">99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    
+    <!-- Custom script -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
